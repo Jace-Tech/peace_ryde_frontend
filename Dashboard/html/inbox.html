@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+	 background: #f4f4f4 0% 0% no-repeat padding-box;
+}
+ .messages-container {
+	 overflow-x: hidden;
+	 background: var(--bs-white);
+	 cursor: pointer;
+}
+ .message-wrapper {
+	 all: unset;
+	 display: grid;
+	 grid-template-columns: 60px auto 10ch;
+	 transition: transform 0.3s;
+	 position: relative;
+}
+ .message-wrapper .delete-btn {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 right: -80px;
+	 width: 80px;
+	 background: var(--bs-danger);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 color: white;
+}
+ .message-wrapper .thumbnail {
+	 align-self: center;
+	 grid-row: 0.3333333333;
+	 aspect-ratio: 1;
+	 border-radius: 50%;
+	 background: var(--bs-info);
+	 color: var(--bs-light);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .message-wrapper .name, .message-wrapper .message-text {
+	 text-overflow: ellipsis;
+	 overflow: hidden;
+	 white-space: nowrap;
+}
+ .message-wrapper .name {
+	 align-self: center;
+	 color: var(--bs-dark);
+}
+ .message-wrapper .ago-time {
+	 justify-self: start;
+	 color: var(--bs-secondary);
+}
+ .message-wrapper .message-text {
+	 grid-column: 0.5;
+	 color: var(--bs-secondary);
+}
+ .message-wrapper.swipe-left {
+	 transform: translateX(-80px);
+}
+ 
+    </style>
+</head>
+<body>
+    <h4 class="m-3">Inbox</h4>
+<div class="messages-container mx-3">
+  <a class="message-wrapper border-bottom p-3">
+    <div class="thumbnail me-3">
+      U
+    </div>
+    <div class="name h5 m-0">
+      Usman Kabir
+    </div>
+    <div class="ago-time">
+      2 sec ago
+    </div>
+    <div class="message-text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum non quis vitae consequatur. Inventore, maxime?
+    </div>
+    <div class="delete-btn">
+      <span class="material-icons-round">delete</span>
+    </div>
+  </a>
+  <a class="message-wrapper border-bottom p-3">
+    <div class="thumbnail me-3">
+      J
+    </div>
+    <div class="name h5 m-0">
+      John Smith
+    </div>
+    <div class="ago-time">
+      5 mint ago
+    </div>
+    <div class="message-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="delete-btn">
+      <span class="material-icons-round">delete</span>
+    </div>
+  </a>
+  <a class="message-wrapper border-bottom p-3">
+    <div class="thumbnail me-3">
+      D
+    </div>
+    <div class="name h5 m-0">
+      Darren Peress
+    </div>
+    <div class="ago-time">
+      3 week ago
+    </div>
+    <div class="message-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quos?
+    </div>
+    <div class="delete-btn">
+      <span class="material-icons-round">delete</span>
+    </div>
+  </a>
+  <a class="message-wrapper border-bottom p-3">
+    <div class="thumbnail me-3">
+      G
+    </div>
+    <div class="name h5 m-0">
+      Gary
+    </div>
+    <div class="ago-time">
+      1 month ago
+    </div>
+    <div class="message-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia vel molestias facere possimus placeat nulla sint ut quasi aliquam autem?
+    </div>
+    <div class="delete-btn">
+      <span class="material-icons-round">delete</span>
+    </div>
+  </a>
+</div>
+<script>
+    $(".message-wrapper").click(function(){
+  $(this).toggleClass("swipe-left")
+})
+</script>
+</body>
+</html>

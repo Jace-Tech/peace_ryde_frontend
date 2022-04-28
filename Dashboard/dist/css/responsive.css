@@ -1,0 +1,316 @@
+@media (max-width: 1440px) {
+/*Track progress*/
+.progresscard
+{
+  width:925px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
+  overflow-x:auto;
+}
+.progressservice
+{
+  color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+}
+.progressstatus
+{
+  color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+  
+}
+.progressth
+{
+  padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+  
+}
+.progressapprove
+{
+  padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+}
+
+/*SERVICES*/
+.question {
+  font-family: Ubuntu;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+padding: 20px 80px 20px 20px;
+position: relative;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.question::after {
+content: "\002B";
+font-size: 2.2rem;
+position: absolute;
+right: 20px;
+transition: 0.2s;
+}
+
+.question.active::after {
+transform: rotate(45deg);
+}
+
+.answercont {
+max-height: 0;
+overflow: hidden;
+transition: 0.3s;
+}
+
+.answer {
+padding: 0 20px 20px;
+line-height: 1.5rem;
+}
+.containerques {
+background-color: white;
+color: #0A0E69;
+border-radius: 10px;
+width: 622px;
+margin: 20px 0;
+margin-left: 43px;
+box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+}
+.servicesh3
+{
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  color:#0F1377;
+  padding-top:20px;padding-left:51px
+                                
+}
+
+/*Bank SETTINGS*/
+.image-upload-two{
+  grid-area: img-u-two;
+  display: flex;
+  
+}
+.center2 {
+  display:inline;
+  margin: 3px;
+}
+
+.form-input2 {
+  width:100px;
+  padding:3px;
+  background:#fff;
+  
+}
+.form-input2 input {
+  display:none;
+}
+.form-input2 label {
+  display:block;
+  width:100px;
+  height: auto;
+  max-height: 100px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.form-input2 img {
+  width:166px;
+  height: 166px;
+  margin: 2px;
+  
+}
+
+.imgRemove{
+  position: relative;
+  bottom: 114px;
+  left: 68%;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+.imgRemove::after{
+  content: ' \21BA';
+  color: #fff;
+  font-weight: 900;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bankh3
+{
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  color:#0F1377;
+  padding-top:20px;padding-left:395px
+                                
+}
+.manage
+{
+  padding-top:51px;font-family: Ubuntu;
+  font-size: 16px;
+  padding-left: 51px;
+  font-style: normal;
+  font-weight: 400;
+  color:#1161D9;
+                
+}
+.bankdiv
+{
+  height: 206px;
+  width: 626px;
+  margin-left: 133px;
+  margin-top: 68px;
+  border-radius: 20px;
+  background: #0E5FDA;
+}
+.bankdivp
+{
+  
+  padding-left: 201px;
+  padding-top: 94px;
+  border-radius: 0px;
+  
+}
+
+.debitcard
+{
+  height: 60px;margin-left:212px;
+    width: 480px;                            
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background-color: #ADC92E;
+}
+.cancelbutton
+{
+  height: 60px;margin-left:212px;
+    width: 480px;                            
+    border-radius: 10px;
+    border:1px solid #ADC92E;
+    padding: 20px;
+    color: #ADC92E;
+    margin-bottom:347px;
+    background-color: #ffffff;
+}
+
+/*ACCOUNT PAGE*/
+.left-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .left-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .image-upload-two{
+      grid-area: img-u-two;
+      display: flex;
+      
+    }
+    .center {
+      display:inline;
+      margin: 3px;
+    }
+  
+    .form-input {
+      width:100px;
+      padding:3px;
+      background:#fff;
+      
+    }
+    .form-input input {
+      display:none;
+    }
+    .form-input label {
+      display:block;
+      width:100px;
+      height: auto;
+      max-height: 100px;
+      border-radius:10px;
+      cursor:pointer;
+    }
+    
+    .form-input img {
+      width:166px;
+      height: 166px;
+      margin: 2px;
+      
+    }
+  
+    .imgRemove{
+      position: relative;
+      bottom: 114px;
+      left: 68%;
+      background-color: transparent;
+      border: none;
+      font-size: 30px;
+      outline: none;
+    }
+    .imgRemove::after{
+      content: ' \21BA';
+      color: #fff;
+      font-weight: 900;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .profile{
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        color:#0F1377;
+        padding-top:20px;padding-left:51px;
+    }
+    .customise
+    {
+        margin-left: 317px;margin-top: -40px;
+    }
+    .click
+    {
+        padding-top:66px;font-family: Ubuntu;
+        font-size: 13px;
+        padding-left: 10px;
+        font-style: normal;
+        font-weight: 400;
+        color:#1161D9;
+                            
+    }
+    .accountrow
+    {
+        margin-left: 160px; margin-top:46px
+    }
+    .accountfirst
+    {
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color:#000000;
+                        
+    }
+    .accountinput
+    {
+        border:1px solid #E9EDF0; font-family: ubuntu; margin-top: 21px; height: 59px;
+        width: 630px;                    
+        background: #E9EDF0;
+        color: #444649;
+        border-radius: 6px;
+        padding: 20px;
+                        
+    }
+  .accountbutton
+  {
+    height: 60px;
+    width: 587px;                            
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 347px;
+    background-color: #1161D9;
+  }
+  
+                                
+
+}
